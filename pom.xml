@@ -13,10 +13,7 @@
     <groupId>com.wyz</groupId>
     <artifactId>batch_task</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-        <elasticsearch.version>6.5.4</elasticsearch.version>
-        <senseguard.version>2.1.0-changning-SNAPSHOT</senseguard.version>
-    </properties>
+
 
     <dependencies>
         <dependency>
@@ -29,30 +26,7 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.sensetime.fis</groupId>
-            <artifactId>senseguard-result-consume-common</artifactId>
-            <version>${senseguard.version}</version>
-        </dependency>
-        <!-- elasticsearch -->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>${elasticsearch.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-client-sniffer</artifactId>
-            <version>${elasticsearch.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.sensetime.fis</groupId>
-            <artifactId>senseguard-nebula-starter</artifactId>
-            <version>${senseguard.version}</version>
-        </dependency>
+        </dependency
     </dependencies>
 
 </project>
