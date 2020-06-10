@@ -1,0 +1,24 @@
+
+app:
+  ip: 10.151.3.83
+server: 
+    port: 10341
+    servlet:
+      context-path: /senseguard-face-search
+spring:
+    data:
+        elasticsearch:
+            cluster-name: senseguard-logging
+            cluster-nodes: ${app.ip}:30908
+            properties:
+                client.transport.sniff: true
+    application:
+      name: senseguard-face-search
+
+### 结构化ES索引
+elasticsearch:
+  index:
+    structure: struct
+### redis通用key
+redis:
+  universal-key: SenseTime:SenseGuard:FaceSearch:Pedestrian_
